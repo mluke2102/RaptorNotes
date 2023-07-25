@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C94668C828CFCB6D00319C5A /* RaptorNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94668C728CFCB6D00319C5A /* RaptorNotesApp.swift */; };
+		C94668CA28CFCB6D00319C5A /* RaptorNotesDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94668C928CFCB6D00319C5A /* RaptorNotesDocument.swift */; };
+		C94668CC28CFCB6D00319C5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94668CB28CFCB6D00319C5A /* ContentView.swift */; };
+		C94668CE28CFCB6F00319C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94668CD28CFCB6F00319C5A /* Assets.xcassets */; };
+		C94668D328CFCB6F00319C5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94668D228CFCB6F00319C5A /* Preview Assets.xcassets */; };
+		C94668DD28CFCB6F00319C5A /* RaptorNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94668DC28CFCB6F00319C5A /* RaptorNotesTests.swift */; };
+		C94668E728CFCB6F00319C5A /* RaptorNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94668E628CFCB6F00319C5A /* RaptorNotesUITests.swift */; };
+		C94668E928CFCB6F00319C5A /* RaptorNotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94668E828CFCB6F00319C5A /* RaptorNotesUITestsLaunchTests.swift */; };
+		C94668F828CFCE0D00319C5A /* RecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94668F528CFCE0D00319C5A /* RecorderView.swift */; };
+		C94668F928CFCE0D00319C5A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94668F628CFCE0D00319C5A /* Constants.swift */; };
+		C94668FA28CFCE0D00319C5A /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94668F728CFCE0D00319C5A /* SpeechRecognizer.swift */; };
+		C979AFDF28CFE4190099074F /* Sentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C979AFDE28CFE4190099074F /* Sentence.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C94668D928CFCB6F00319C5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C94668BC28CFCB6D00319C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C94668C328CFCB6D00319C5A;
+			remoteInfo = RaptorNotes;
+		};
+		C94668E328CFCB6F00319C5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C94668BC28CFCB6D00319C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C94668C328CFCB6D00319C5A;
+			remoteInfo = RaptorNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C94668C428CFCB6D00319C5A /* RaptorNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaptorNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94668C728CFCB6D00319C5A /* RaptorNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaptorNotesApp.swift; sourceTree = "<group>"; };
+		C94668C928CFCB6D00319C5A /* RaptorNotesDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaptorNotesDocument.swift; sourceTree = "<group>"; };
+		C94668CB28CFCB6D00319C5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C94668CD28CFCB6F00319C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C94668CF28CFCB6F00319C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C94668D028CFCB6F00319C5A /* RaptorNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RaptorNotes.entitlements; sourceTree = "<group>"; };
+		C94668D228CFCB6F00319C5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C94668D828CFCB6F00319C5A /* RaptorNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaptorNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94668DC28CFCB6F00319C5A /* RaptorNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaptorNotesTests.swift; sourceTree = "<group>"; };
+		C94668E228CFCB6F00319C5A /* RaptorNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaptorNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94668E628CFCB6F00319C5A /* RaptorNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaptorNotesUITests.swift; sourceTree = "<group>"; };
+		C94668E828CFCB6F00319C5A /* RaptorNotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaptorNotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C94668F528CFCE0D00319C5A /* RecorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderView.swift; sourceTree = "<group>"; };
+		C94668F628CFCE0D00319C5A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C94668F728CFCE0D00319C5A /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		C979AFDE28CFE4190099074F /* Sentence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C94668C128CFCB6D00319C5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94668D528CFCB6F00319C5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94668DF28CFCB6F00319C5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C94668BB28CFCB6D00319C5A = {
+			isa = PBXGroup;
+			children = (
+				C94668C628CFCB6D00319C5A /* RaptorNotes */,
+				C94668DB28CFCB6F00319C5A /* RaptorNotesTests */,
+				C94668E528CFCB6F00319C5A /* RaptorNotesUITests */,
+				C94668C528CFCB6D00319C5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C94668C528CFCB6D00319C5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C94668C428CFCB6D00319C5A /* RaptorNotes.app */,
+				C94668D828CFCB6F00319C5A /* RaptorNotesTests.xctest */,
+				C94668E228CFCB6F00319C5A /* RaptorNotesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C94668C628CFCB6D00319C5A /* RaptorNotes */ = {
+			isa = PBXGroup;
+			children = (
+				C94668C728CFCB6D00319C5A /* RaptorNotesApp.swift */,
+				C94668C928CFCB6D00319C5A /* RaptorNotesDocument.swift */,
+				C979AFDE28CFE4190099074F /* Sentence.swift */,
+				C94668F628CFCE0D00319C5A /* Constants.swift */,
+				C94668F528CFCE0D00319C5A /* RecorderView.swift */,
+				C94668F728CFCE0D00319C5A /* SpeechRecognizer.swift */,
+				C94668CB28CFCB6D00319C5A /* ContentView.swift */,
+				C94668CD28CFCB6F00319C5A /* Assets.xcassets */,
+				C94668CF28CFCB6F00319C5A /* Info.plist */,
+				C94668D028CFCB6F00319C5A /* RaptorNotes.entitlements */,
+				C94668D128CFCB6F00319C5A /* Preview Content */,
+			);
+			path = RaptorNotes;
+			sourceTree = "<group>";
+		};
+		C94668D128CFCB6F00319C5A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C94668D228CFCB6F00319C5A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C94668DB28CFCB6F00319C5A /* RaptorNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				C94668DC28CFCB6F00319C5A /* RaptorNotesTests.swift */,
+			);
+			path = RaptorNotesTests;
+			sourceTree = "<group>";
+		};
+		C94668E528CFCB6F00319C5A /* RaptorNotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C94668E628CFCB6F00319C5A /* RaptorNotesUITests.swift */,
+				C94668E828CFCB6F00319C5A /* RaptorNotesUITestsLaunchTests.swift */,
+			);
+			path = RaptorNotesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C94668C328CFCB6D00319C5A /* RaptorNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94668EC28CFCB6F00319C5A /* Build configuration list for PBXNativeTarget "RaptorNotes" */;
+			buildPhases = (
+				C94668C028CFCB6D00319C5A /* Sources */,
+				C94668C128CFCB6D00319C5A /* Frameworks */,
+				C94668C228CFCB6D00319C5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaptorNotes;
+			productName = RaptorNotes;
+			productReference = C94668C428CFCB6D00319C5A /* RaptorNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C94668D728CFCB6F00319C5A /* RaptorNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94668EF28CFCB6F00319C5A /* Build configuration list for PBXNativeTarget "RaptorNotesTests" */;
+			buildPhases = (
+				C94668D428CFCB6F00319C5A /* Sources */,
+				C94668D528CFCB6F00319C5A /* Frameworks */,
+				C94668D628CFCB6F00319C5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C94668DA28CFCB6F00319C5A /* PBXTargetDependency */,
+			);
+			name = RaptorNotesTests;
+			productName = RaptorNotesTests;
+			productReference = C94668D828CFCB6F00319C5A /* RaptorNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C94668E128CFCB6F00319C5A /* RaptorNotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94668F228CFCB6F00319C5A /* Build configuration list for PBXNativeTarget "RaptorNotesUITests" */;
+			buildPhases = (
+				C94668DE28CFCB6F00319C5A /* Sources */,
+				C94668DF28CFCB6F00319C5A /* Frameworks */,
+				C94668E028CFCB6F00319C5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C94668E428CFCB6F00319C5A /* PBXTargetDependency */,
+			);
+			name = RaptorNotesUITests;
+			productName = RaptorNotesUITests;
+			productReference = C94668E228CFCB6F00319C5A /* RaptorNotesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C94668BC28CFCB6D00319C5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					C94668C328CFCB6D00319C5A = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					C94668D728CFCB6F00319C5A = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C94668C328CFCB6D00319C5A;
+					};
+					C94668E128CFCB6F00319C5A = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C94668C328CFCB6D00319C5A;
+					};
+				};
+			};
+			buildConfigurationList = C94668BF28CFCB6D00319C5A /* Build configuration list for PBXProject "RaptorNotes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C94668BB28CFCB6D00319C5A;
+			productRefGroup = C94668C528CFCB6D00319C5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C94668C328CFCB6D00319C5A /* RaptorNotes */,
+				C94668D728CFCB6F00319C5A /* RaptorNotesTests */,
+				C94668E128CFCB6F00319C5A /* RaptorNotesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C94668C228CFCB6D00319C5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94668D328CFCB6F00319C5A /* Preview Assets.xcassets in Resources */,
+				C94668CE28CFCB6F00319C5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94668D628CFCB6F00319C5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94668E028CFCB6F00319C5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C94668C028CFCB6D00319C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94668F928CFCE0D00319C5A /* Constants.swift in Sources */,
+				C94668CA28CFCB6D00319C5A /* RaptorNotesDocument.swift in Sources */,
+				C94668C828CFCB6D00319C5A /* RaptorNotesApp.swift in Sources */,
+				C94668F828CFCE0D00319C5A /* RecorderView.swift in Sources */,
+				C94668CC28CFCB6D00319C5A /* ContentView.swift in Sources */,
+				C979AFDF28CFE4190099074F /* Sentence.swift in Sources */,
+				C94668FA28CFCE0D00319C5A /* SpeechRecognizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94668D428CFCB6F00319C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94668DD28CFCB6F00319C5A /* RaptorNotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94668DE28CFCB6F00319C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94668E928CFCB6F00319C5A /* RaptorNotesUITestsLaunchTests.swift in Sources */,
+				C94668E728CFCB6F00319C5A /* RaptorNotesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C94668DA28CFCB6F00319C5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C94668C328CFCB6D00319C5A /* RaptorNotes */;
+			targetProxy = C94668D928CFCB6F00319C5A /* PBXContainerItemProxy */;
+		};
+		C94668E428CFCB6F00319C5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C94668C328CFCB6D00319C5A /* RaptorNotes */;
+			targetProxy = C94668E328CFCB6F00319C5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C94668EA28CFCB6F00319C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C94668EB28CFCB6F00319C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C94668ED28CFCB6F00319C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RaptorNotes/RaptorNotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RaptorNotes/Preview Content\"";
+				DEVELOPMENT_TEAM = N5BBRS4WQK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RaptorNotes/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Raptor uses the microphone to record lectures";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Raptor uses speech recognition to transcribe lectures";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphonesimulator*]" = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mluke.RaptorNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C94668EE28CFCB6F00319C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RaptorNotes/RaptorNotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RaptorNotes/Preview Content\"";
+				DEVELOPMENT_TEAM = N5BBRS4WQK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RaptorNotes/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Raptor uses the microphone to record lectures";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Raptor uses speech recognition to transcribe lectures";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UISupportsDocumentBrowser[sdk=iphonesimulator*]" = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mluke.RaptorNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C94668F028CFCB6F00319C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5BBRS4WQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mluke.RaptorNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaptorNotes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RaptorNotes";
+			};
+			name = Debug;
+		};
+		C94668F128CFCB6F00319C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5BBRS4WQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mluke.RaptorNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaptorNotes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RaptorNotes";
+			};
+			name = Release;
+		};
+		C94668F328CFCB6F00319C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5BBRS4WQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mluke.RaptorNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RaptorNotes;
+			};
+			name = Debug;
+		};
+		C94668F428CFCB6F00319C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5BBRS4WQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mluke.RaptorNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RaptorNotes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C94668BF28CFCB6D00319C5A /* Build configuration list for PBXProject "RaptorNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94668EA28CFCB6F00319C5A /* Debug */,
+				C94668EB28CFCB6F00319C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C94668EC28CFCB6F00319C5A /* Build configuration list for PBXNativeTarget "RaptorNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94668ED28CFCB6F00319C5A /* Debug */,
+				C94668EE28CFCB6F00319C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C94668EF28CFCB6F00319C5A /* Build configuration list for PBXNativeTarget "RaptorNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94668F028CFCB6F00319C5A /* Debug */,
+				C94668F128CFCB6F00319C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C94668F228CFCB6F00319C5A /* Build configuration list for PBXNativeTarget "RaptorNotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94668F328CFCB6F00319C5A /* Debug */,
+				C94668F428CFCB6F00319C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C94668BC28CFCB6D00319C5A /* Project object */;
+}
